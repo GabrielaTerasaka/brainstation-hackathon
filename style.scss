@@ -63,15 +63,19 @@ body {
   &__label {
     margin: toRem(10) toRem(4);
     border-bottom: 1px solid $light;
+    font-weight: 900;
+    font-size: toRem(28);
   }
   &__label-category {
     margin: toRem(4);
     width: 30%;
     min-width: toRem(200);
+    cursor: pointer;
   }
   &__label-alcoholic {
     margin: toRem(4);
     width: toRem(100);
+    cursor: pointer;
   }
   &__input {
     margin-bottom: toRem(16);

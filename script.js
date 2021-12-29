@@ -4,7 +4,8 @@ axios
   .then((result) => {
     const categoryWrapper = document.querySelector(".form__category-wrapper");
     result.data.drinks.forEach((category) => {
-      const label = document.createElement("span");
+      // const label = document.createElement("span");
+      const label = document.createElement("label");
       label.classList.add("form__label-category");
       label.innerText = category.strCategory;
       categoryWrapper.append(label);
