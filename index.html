@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>BrainStation Hackathon</title>
+  </head>
+  <body class="body">
+    <h1 class="body__title">Let's Make Some Drinks 🍹</h1>
+    <form class="body__form">
+      <label for="drinkName" class="form__label">Drink Name</label>
+      <input
+        type="text"
+        name="drinkName"
+        placeholder="Type part or full name of the drink"
+        class="form__input"
+      />
+      <label for="category" class="form__label">Choose the Category</label>
+      <div class="form__category-wrapper"></div>
+      <label for="alcoholic" class="form__label">Choose if Alcoholic</label>
+      <div class="form__alcoholic-wrapper">
+        <span class="form__label-alcoholic"
+          ><input type="radio" name="alcoholic" value="Alcoholic" />Yes</span
+        >
+        <span class="form__label-alcoholic"
+          ><input type="radio" name="alcoholic" value="Non_Alcoholic" />No</span
+        >
+        <span class="form__label-alcoholic"
+          ><input type="radio" name="alcoholic" value="Optional_alcohol" />Optional</span
+        >
+      </div>
+      </div>
+      
+      <button type="submit" class="form__button">Find Drinks</button>
+    </form>
+    <div class="body__cards-wrapper">      
+    </div>
+
+    <div class="modal modal__hidden">
+      <div class="modal__overlay"></div>
+      <article class="modal__box">
+        <img src="./assets/close-icon.svg" alt="close icon" class="modal__close-icon">
+        <h3 class="modal__title">DRINK</h3>
+        <h4 class="modal__sub-title">Ingredients</h4>
+        <ul class="modal__ingredients"></ul>
+        <h4 class="modal__sub-title">Instruction</h4>
+        <p class="modal__content">CONTENT</p>
+      </article>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
